@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --color-brand-green: #10B981;
+  --color-brand-emerald: #059669;
+  --color-brand-dark: #064E3B;
+  --color-brand-surface: #F8FAFC;
+}
+
+/* Explicit fallback utilities for brand design system */
+.bg-primary { background-color: #10B981 !important; }
+.bg-primary-dark { background-color: #064E3B !important; }
+.bg-light-yellow { background-color: #FEF3C7 !important; }
+.bg-off-white { background-color: #F8FAFC !important; }
+.text-main { color: #0F172A !important; }
+.text-muted { color: #64748B !important; }
+.border-default { border-color: #E2E8F0 !important; }
+.text-danger { color: #EF4444 !important; }
+
+/* Base document defaults */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #0F172A;
+  background-color: #F8FAFC;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
